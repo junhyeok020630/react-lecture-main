@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <!--HTML 표준에 맞추기 위해 이벤트 기능 사용-->
+    <script>
+        window.onload = function() {
+            // h1 태그의 배경 색상 변경
+            document.querySelector('h1').style.backgroundColor = 'red';
+            // h2 태그의 글자 색상 변경
+            document.querySelector('h2').style.color = 'red';
+        }
+    </script>
+</head>
+<body>
+    <!--script 태그를 읽을 당시에는 h1 태그와 h2 태그가 미생성-->
+    <h1>Process - 1</h1>
+    <h2>Process - 2</h2>
+
+    <!--script 태그를 아래에 삽입하여 해결 - HTML 표준에 어긋남, 규모가 클 때 유지보수가 어려움 -->
+    <!--<script>
+        // h1 태그의 배경 색상 변경
+        document.querySelector('h1').style.backgroundColor = 'red';
+        // h2 태그의 글자 색상 변경
+        document.querySelector('h2').style.color = 'red';
+    </script> -->
+</body>
+</html>
